@@ -15,47 +15,63 @@ function setup() {
     rect(225, 50, 800, 450);
 
     //Piano screen
-    fill(150);
+    fill(156, 175, 136);
     rect(300, 75, 488, 75);
 
     //Piano keys
     fill(255);
     if(mouseIsPressed === true && mouseX >= 300 && mouseX < 360 && mouseY >= 175 && mouseY <=475) {
+    textSize(36);
+    text("Note: C", 330, 125);
     fill(241, 235, 156);
     }
     rect(300, 175, 60, 300);
     fill(255);
     if(mouseIsPressed === true && mouseX >= 361 && mouseX < 421 && mouseY >= 175 && mouseY <=475) {
+      textSize(36);
+      text("Note: D", 330, 125);
       fill(241, 235, 156);
       }
     rect(361, 175, 60, 300);
     fill(255);
     if(mouseIsPressed === true && mouseX >= 422 && mouseX < 482 && mouseY >= 175 && mouseY <=475) {
+      textSize(36);
+      text("Note: E", 330, 125);
       fill(241, 235, 156);
       }
     rect(422, 175, 60, 300);
     fill(255);
     if(mouseIsPressed === true && mouseX >= 483 && mouseX < 543 && mouseY >= 175 && mouseY <=475) {
+      textSize(36);
+      text("Note: F", 330, 125);
       fill(241, 235, 156);
       }
       rect(483, 175, 60, 300);
       fill(255);
     if(mouseIsPressed === true && mouseX >= 544 && mouseX < 604 && mouseY >= 175 && mouseY <=475) {
+      textSize(36);
+      text("Note: G", 330, 125);
       fill(241, 235, 156);
       }
       rect(544, 175, 60, 300);
       fill(255);
     if(mouseIsPressed === true && mouseX >= 605 && mouseX < 665 && mouseY >= 175 && mouseY <=475) {
+      textSize(36);
+      text("Note: A", 330, 125);
       fill(241, 235, 156);
       }
       rect(605, 175, 60, 300);
       fill(255);
     if(mouseIsPressed === true && mouseX >= 666 && mouseX < 726 && mouseY >= 175 && mouseY <=475) {
+      textSize(36);
+      text("Note: B", 330, 125);
       fill(241, 235, 156);
       }
     rect(666, 175, 60, 300);
     fill(255);
     if(mouseIsPressed === true && mouseX >= 727 && mouseX < 787 && mouseY >= 175 && mouseY <=475) {
+      textSize(36);
+      text("Note: C", 330, 125);
       fill(241, 235, 156);
       }
      rect(727, 175, 60, 300);

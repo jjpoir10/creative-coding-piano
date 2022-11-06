@@ -101,6 +101,42 @@ function setup() {
     }
       rect (345,175,30, 200);
 
+   //Eb4 Key
+   fill (0);
+   if(mouseIsPressed === true && mouseX >= 345 && mouseX < 375 && mouseY >= 175 && mouseY <=375) {
+     textSize(36);
+     text("Note: Db", 330, 125);
+     fill(241, 235, 156);
+   }
+     rect (406,175,30, 200);
+
+  //Gb4 Key
+  fill (0);
+  if(mouseIsPressed === true && mouseX >= 345 && mouseX < 375 && mouseY >= 175 && mouseY <=375) {
+    textSize(36);
+    text("Note: Db", 330, 125);
+    fill(241, 235, 156);
+  }
+    rect (528,175,30, 200);
+
+  //Ab5 Key
+  fill (0);
+  if(mouseIsPressed === true && mouseX >= 345 && mouseX < 375 && mouseY >= 175 && mouseY <=375) {
+    textSize(36);
+    text("Note: Db", 330, 125);
+    fill(241, 235, 156);
+  }
+    rect (589,175,30, 200);
+
+  //Bb5 Key
+  fill (0);
+  if(mouseIsPressed === true && mouseX >= 345 && mouseX < 375 && mouseY >= 175 && mouseY <=375) {
+    textSize(36);
+    text("Note: Db", 330, 125);
+    fill(241, 235, 156);
+  }
+    rect (711,175,30, 200);
+
   }
 
   function playSynth() {

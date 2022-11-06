@@ -37,6 +37,8 @@ function setup() {
       fill(241, 235, 156);
       }
     rect(361, 175, 60, 300);
+
+    //E key
     fill(255);
     if(mouseIsPressed === true && mouseX >= 422 && mouseX < 482 && mouseY >= 175 && mouseY <=475) {
       textSize(36);
@@ -44,6 +46,8 @@ function setup() {
       fill(241, 235, 156);
       }
     rect(422, 175, 60, 300);
+
+    //F key
     fill(255);
     if(mouseIsPressed === true && mouseX >= 483 && mouseX < 543 && mouseY >= 175 && mouseY <=475) {
       textSize(36);
@@ -51,6 +55,8 @@ function setup() {
       fill(241, 235, 156);
       }
       rect(483, 175, 60, 300);
+
+      //G key
       fill(255);
     if(mouseIsPressed === true && mouseX >= 544 && mouseX < 604 && mouseY >= 175 && mouseY <=475) {
       textSize(36);
@@ -58,6 +64,8 @@ function setup() {
       fill(241, 235, 156);
       }
       rect(544, 175, 60, 300);
+
+      //A key
       fill(255);
     if(mouseIsPressed === true && mouseX >= 605 && mouseX < 665 && mouseY >= 175 && mouseY <=475) {
       textSize(36);
@@ -65,6 +73,8 @@ function setup() {
       fill(241, 235, 156);
       }
       rect(605, 175, 60, 300);
+
+      //B key
       fill(255);
     if(mouseIsPressed === true && mouseX >= 666 && mouseX < 726 && mouseY >= 175 && mouseY <=475) {
       textSize(36);
@@ -72,6 +82,8 @@ function setup() {
       fill(241, 235, 156);
       }
     rect(666, 175, 60, 300);
+
+    //Second C key
     fill(255);
     if(mouseIsPressed === true && mouseX >= 727 && mouseX < 787 && mouseY >= 175 && mouseY <=475) {
       textSize(36);

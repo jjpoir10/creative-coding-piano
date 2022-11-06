@@ -113,9 +113,9 @@ function setup() {
     if(mouseX >= 300 && mouseX < 360 && mouseY >= 175 && mouseY <=475) {
       monoSynth.play(notes[0], velocity, time, dur);
       }
-      //   else if(mouseX >= 251 && mouseX < 301 && mouseY >= 100 && mouseY <=400) {
-      // monoSynth.play(notes[1], velocity, time, dur);
-      // }
+      else if(mouseX >= 345 && mouseX < 375 && mouseY >= 175 && mouseY <=375) {
+      monoSynth.play(notes[1], velocity, time, dur);
+      }
       else if(mouseX >= 361 && mouseX < 421 && mouseY >= 175 && mouseY <=475) {
         monoSynth.play(notes[2], velocity, time, dur);
         }

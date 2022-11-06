@@ -19,6 +19,8 @@ function setup() {
     rect(300, 75, 488, 75);
 
     //Piano keys
+
+    //C key
     fill(255);
     if(mouseIsPressed === true && mouseX >= 300 && mouseX < 360 && mouseY >= 175 && mouseY <=475) {
     textSize(36);
@@ -26,6 +28,8 @@ function setup() {
     fill(241, 235, 156);
     }
     rect(300, 175, 60, 300);
+
+    //D key
     fill(255);
     if(mouseIsPressed === true && mouseX >= 361 && mouseX < 421 && mouseY >= 175 && mouseY <=475) {
       textSize(36);

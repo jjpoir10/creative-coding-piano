@@ -130,12 +130,12 @@ function setup() {
 
   //Bb5 Key
   fill (0);
-  if(mouseIsPressed === true && mouseX >= 711 && mouseX < 741 && mouseY >= 175 && mouseY <=375) {
+  if(mouseIsPressed === true && mouseX >= 650 && mouseX < 680 && mouseY >= 175 && mouseY <=375) {
     textSize(36);
     text("Note: Bb5", 330, 125);
     fill(241, 235, 156);
   }
-    rect (711,175,30, 200);
+    rect (650,175,30, 200);
 
   }
 

@@ -164,25 +164,25 @@ function setup() {
             else if(mouseX >= 483 && mouseX < 543 && mouseY >= 175 && mouseY <=475) {
               monoSynth.play(notes[5], velocity, time, dur);
               }
+            else if(mouseX >= 528 && mouseX < 558 && mouseY >= 175 && mouseY <=375) {
+              monoSynth.play(notes[6], velocity, time, dur);
+              }
               else if(mouseX >= 544 && mouseX < 604 && mouseY >= 175 && mouseY <=475) {
                 monoSynth.play(notes[7], velocity, time, dur);
                 }
-                // else if(mouseX >= 251 && mouseX < 301 && mouseY >= 100 && mouseY <=400) {
-                //   monoSynth.play(notes[7], velocity, time, dur);
-                //   }
+              else if(mouseX >= 589 && mouseX < 619 && mouseY >= 175 && mouseY <=375) {
+                monoSynth.play(notes[8], velocity, time, dur);
+                }
                   else if(mouseX >= 605 && mouseX < 665 && mouseY >= 175 && mouseY <=475) {
                     monoSynth.play(notes[9], velocity, time, dur);
                     }
-                    // else if(mouseX >= 251 && mouseX < 301 && mouseY >= 100 && mouseY <=400) {
-                    //   monoSynth.play(notes[9], velocity, time, dur);
+                  else if (mouseX >= 650 && mouseX < 680 && mouseY >= 175 && mouseY <=375) {
+                    monoSynth.play(notes[10], velocity, time, dur);
                     //   }
                       else if(mouseX >= 666 && mouseX < 726 && mouseY >= 175 && mouseY <=475) {
                         monoSynth.play(notes[11], velocity, time, dur);
                         }
-                        // else if(mouseX >= 251 && mouseX < 301 && mouseY >= 100 && mouseY <=400) {
-                        //   monoSynth.play(notes[11], velocity, time, dur);
-                        //   }
-                          else if(mouseX >= 727 && mouseX < 787 && mouseY >= 175 && mouseY <=475) {
+                      else if(mouseX >= 727 && mouseX < 787 && mouseY >= 175 && mouseY <=475) {
                             monoSynth.play(notes[12], velocity, time, dur);
                             }
   }

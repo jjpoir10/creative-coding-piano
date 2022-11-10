@@ -12,6 +12,7 @@ function setup() {
 
     //Piano body
     fill(0);
+    noStroke();
     rect(225, 50, 800, 450);
 
     //Piano screen
@@ -154,6 +155,15 @@ function setup() {
     fill(241, 235, 156);
   }
     rect (650, 175, 30, 200);
+
+  //Minor key accents
+  stroke(255);
+  strokeWeight(0.5);
+  line(348, 372, 372, 372);
+  line(409, 372, 433, 372);
+  line(531, 372, 555, 372);
+  line(592, 372, 616, 372);
+  line(653, 372, 677, 372);
 
   }
 

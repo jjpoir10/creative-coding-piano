@@ -24,6 +24,7 @@ function setup() {
     fill(255);
     if((mouseIsPressed === true && mouseX >= 300 && mouseX < 345 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed ===true && mouseX >= 300 && mouseX < 360 && mouseY > 375 && mouseY <=475)) {
     textSize(36);
+    fill(0);
     text("Note: C", 330, 125);
     fill(241, 235, 156);
     }
@@ -33,6 +34,7 @@ function setup() {
     fill(255);
     if((mouseIsPressed === true && mouseX >= 376 && mouseX < 405 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 361 && mouseX < 421 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
+      fill(0);
       text("Note: D", 330, 125);
       fill(241, 235, 156);
       }
@@ -42,6 +44,7 @@ function setup() {
     fill(255);
     if((mouseIsPressed === true && mouseX >= 437 && mouseX < 482 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 422 && mouseX < 482 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
+      fill(0);
       text("Note: E", 330, 125);
       fill(241, 235, 156);
       }
@@ -51,6 +54,7 @@ function setup() {
     fill(255);
     if((mouseIsPressed === true && mouseX >= 483 && mouseX < 528 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 483 && mouseX < 543 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
+      fill(0);
       text("Note: F", 330, 125);
       fill(241, 235, 156);
       }
@@ -60,6 +64,7 @@ function setup() {
       fill(255);
     if((mouseIsPressed === true && mouseX >= 559 && mouseX < 589 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 544 && mouseX < 604 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
+      fill(0);
       text("Note: G", 330, 125);
       fill(241, 235, 156);
       }
@@ -69,6 +74,7 @@ function setup() {
       fill(255);
     if((mouseIsPressed === true && mouseX >= 620 && mouseX < 650 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 605 && mouseX < 665 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
+      fill(0);
       text("Note: A", 330, 125);
       fill(241, 235, 156);
       }
@@ -78,6 +84,7 @@ function setup() {
       fill(255);
     if((mouseIsPressed === true && mouseX >= 681 && mouseX < 726 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 666 && mouseX < 726 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
+      fill(0);
       text("Note: B", 330, 125);
       fill(241, 235, 156);
       }
@@ -87,6 +94,7 @@ function setup() {
     fill(255);
     if(mouseIsPressed === true && mouseX >= 727 && mouseX < 787 && mouseY >= 175 && mouseY <=475) {
       textSize(36);
+      fill(0);
       text("Note: C", 330, 125);
       fill(241, 235, 156);
       }

@@ -40,7 +40,7 @@ function setup() {
 
     //E key
     fill(255);
-    if(mouseIsPressed === true && mouseX >= 422 && mouseX < 482 && mouseY >= 175 && mouseY <=475) {
+    if((mouseIsPressed === true && mouseX >= 437 && mouseX < 482 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 422 && mouseX < 482 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       text("Note: E", 330, 125);
       fill(241, 235, 156);
@@ -49,7 +49,7 @@ function setup() {
 
     //F key
     fill(255);
-    if(mouseIsPressed === true && mouseX >= 483 && mouseX < 543 && mouseY >= 175 && mouseY <=475) {
+    if((mouseIsPressed === true && mouseX >= 483 && mouseX < 528 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 483 && mouseX < 543 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       text("Note: F", 330, 125);
       fill(241, 235, 156);
@@ -158,10 +158,10 @@ function setup() {
       else if(mouseX >= 406 && mouseX < 436 && mouseY >= 100 && mouseY <=375) {
         monoSynth.play(notes[3], velocity, time, dur);
         }
-          else if(mouseX >= 422 && mouseX < 482 && mouseY >= 175 && mouseY <=475) {
+          else if((mouseX >= 437 && mouseX < 482 && mouseY >= 175 && mouseY <=375) || (mouseX >= 422 && mouseX < 482 && mouseY > 375 && mouseY <=475)) {
             monoSynth.play(notes[4], velocity, time, dur);
             }
-            else if(mouseX >= 483 && mouseX < 543 && mouseY >= 175 && mouseY <=475) {
+            else if((mouseX >= 483 && mouseX < 528 && mouseY >= 175 && mouseY <=375) || (mouseX >= 483 && mouseX < 543 && mouseY > 375 && mouseY <=475)) {
               monoSynth.play(notes[5], velocity, time, dur);
               }
             else if(mouseX >= 528 && mouseX < 558 && mouseY >= 175 && mouseY <=375) {

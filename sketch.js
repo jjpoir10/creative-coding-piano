@@ -178,7 +178,7 @@ function setup() {
                     }
                   else if (mouseX >= 650 && mouseX < 680 && mouseY >= 175 && mouseY <=375) {
                     monoSynth.play(notes[10], velocity, time, dur);
-                    //   }
+                      }
                       else if(mouseX >= 666 && mouseX < 726 && mouseY >= 175 && mouseY <=475) {
                         monoSynth.play(notes[11], velocity, time, dur);
                         }

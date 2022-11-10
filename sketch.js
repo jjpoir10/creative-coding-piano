@@ -16,11 +16,21 @@ function setup() {
 
     //Piano screen
     fill(156, 175, 136);
-    rect(300, 75, 488, 75);
+    rect(296, 75, 496, 75);
+    noFill();
+    stroke(0);
+    strokeWeight(2);
+    rect(300, 79, 488, 67);
 
     //Piano keys
 
+    noFill();
+    stroke(255);
+    strokeWeight(2);
+    rect(296, 171, 495, 308);
+
     //C key
+    noStroke();
     fill(255);
     if((mouseIsPressed === true && mouseX >= 300 && mouseX < 345 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed ===true && mouseX >= 300 && mouseX < 360 && mouseY > 375 && mouseY <=475)) {
     textSize(36);

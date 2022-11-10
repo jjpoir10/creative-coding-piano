@@ -22,7 +22,7 @@ function setup() {
 
     //C key
     fill(255);
-    if(mouseIsPressed === true && mouseX >= 300 && mouseX < 360 && mouseY >= 175 && mouseY <=475) {
+    if((mouseIsPressed === true && mouseX >= 300 && mouseX < 345 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed ===true && mouseX >= 300 && mouseX < 360 && mouseY > 375 && mouseY <=475)) {
     textSize(36);
     text("Note: C", 330, 125);
     fill(241, 235, 156);
@@ -31,7 +31,7 @@ function setup() {
 
     //D key
     fill(255);
-    if(mouseIsPressed === true && mouseX >= 361 && mouseX < 421 && mouseY >= 175 && mouseY <=475) {
+    if((mouseIsPressed === true && mouseX >= 376 && mouseX < 405 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 361 && mouseX < 421 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       text("Note: D", 330, 125);
       fill(241, 235, 156);
@@ -96,19 +96,19 @@ function setup() {
     fill (0);
     if(mouseIsPressed === true && mouseX >= 345 && mouseX < 375 && mouseY >= 175 && mouseY <=375) {
       textSize(36);
-      text("Note: Db4", 330, 125);
+      text("Note: Db", 330, 125);
       fill(241, 235, 156);
     }
-      rect (345,175,30, 200);
+      rect (345, 175, 30, 200);
 
    //Eb4 Key
    fill (0);
    if(mouseIsPressed === true && mouseX >= 406 && mouseX < 436 && mouseY >= 175 && mouseY <=375) {
      textSize(36);
-     text("Note: Eb4", 330, 125);
+     text("Note: Eb", 330, 125);
      fill(241, 235, 156);
    }
-     rect (406,175,30, 200);
+     rect (406, 175, 30, 200);
 
   //Gb4 Key
   fill (0);
@@ -117,25 +117,25 @@ function setup() {
     text("Note: Gb", 330, 125);
     fill(241, 235, 156);
   }
-    rect (528,175,30, 200);
+    rect (528, 175, 30, 200);
 
   //Ab5 Key
   fill (0);
   if(mouseIsPressed === true && mouseX >= 589 && mouseX < 619 && mouseY >= 175 && mouseY <=375) {
     textSize(36);
-    text("Note: Ab5", 330, 125);
+    text("Note: Ab", 330, 125);
     fill(241, 235, 156);
   }
-    rect (589,175,30, 200);
+    rect (589, 175, 30, 200);
 
   //Bb5 Key
   fill (0);
   if(mouseIsPressed === true && mouseX >= 650 && mouseX < 680 && mouseY >= 175 && mouseY <=375) {
     textSize(36);
-    text("Note: Bb5", 330, 125);
+    text("Note: Bb", 330, 125);
     fill(241, 235, 156);
   }
-    rect (650,175,30, 200);
+    rect (650, 175, 30, 200);
 
   }
 
@@ -146,13 +146,13 @@ function setup() {
     let time = 0;
     let dur = 1/6;
 
-    if(mouseX >= 300 && mouseX < 360 && mouseY >= 175 && mouseY <=475) {
+    if((mouseX >= 300 && mouseX < 345 && mouseY >= 175 && mouseY <=375) || (mouseX >= 300 && mouseX < 360 && mouseY > 375 && mouseY <=475)) {
       monoSynth.play(notes[0], velocity, time, dur);
       }
       else if(mouseX >= 345 && mouseX < 375 && mouseY >= 175 && mouseY <=375) {
       monoSynth.play(notes[1], velocity, time, dur);
       }
-      else if(mouseX >= 361 && mouseX < 421 && mouseY >= 175 && mouseY <=475) {
+      else if((mouseX >= 376 && mouseX < 405 && mouseY >= 175 && mouseY <=375) || (mouseX >= 361 && mouseX < 421 && mouseY > 375 && mouseY <=475)) {
         monoSynth.play(notes[2], velocity, time, dur);
         }
       else if(mouseX >= 406 && mouseX < 436 && mouseY >= 100 && mouseY <=375) {

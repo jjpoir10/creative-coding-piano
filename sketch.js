@@ -113,57 +113,71 @@ function setup() {
 
      //Db4 Key
     fill (0);
-    if(mouseIsPressed === true && mouseX >= 345 && mouseX < 375 && mouseY >= 175 && mouseY <=375) {
+    if(mouseIsPressed === true && mouseX >= 345 && mouseX < 375 && mouseY >= 172 && mouseY <=375) {
       textSize(36);
       text("Note: Db", 330, 125);
       fill(241, 235, 156);
     }
-      rect (345, 175, 30, 200);
+      rect (345, 172, 30, 203);
 
    //Eb4 Key
    fill (0);
-   if(mouseIsPressed === true && mouseX >= 406 && mouseX < 436 && mouseY >= 175 && mouseY <=375) {
+   if(mouseIsPressed === true && mouseX >= 406 && mouseX < 436 && mouseY >= 172 && mouseY <=375) {
      textSize(36);
      text("Note: Eb", 330, 125);
      fill(241, 235, 156);
    }
-     rect (406, 175, 30, 200);
+     rect (406, 172, 30, 203);
 
   //Gb4 Key
   fill (0);
-  if(mouseIsPressed === true && mouseX >= 528 && mouseX < 558 && mouseY >= 175 && mouseY <=375) {
+  if(mouseIsPressed === true && mouseX >= 528 && mouseX < 558 && mouseY >= 172 && mouseY <=375) {
     textSize(36);
     text("Note: Gb", 330, 125);
     fill(241, 235, 156);
   }
-    rect (528, 175, 30, 200);
+    rect (528, 172, 30, 203);
 
   //Ab5 Key
   fill (0);
-  if(mouseIsPressed === true && mouseX >= 589 && mouseX < 619 && mouseY >= 175 && mouseY <=375) {
+  if(mouseIsPressed === true && mouseX >= 589 && mouseX < 619 && mouseY >= 172 && mouseY <=375) {
     textSize(36);
     text("Note: Ab", 330, 125);
     fill(241, 235, 156);
   }
-    rect (589, 175, 30, 200);
+    rect (589, 172, 30, 203);
 
   //Bb5 Key
   fill (0);
-  if(mouseIsPressed === true && mouseX >= 650 && mouseX < 680 && mouseY >= 175 && mouseY <=375) {
+  if(mouseIsPressed === true && mouseX >= 650 && mouseX < 680 && mouseY >= 172 && mouseY <=375) {
     textSize(36);
     text("Note: Bb", 330, 125);
     fill(241, 235, 156);
   }
-    rect (650, 175, 30, 200);
+    rect (650, 172, 30, 203);
 
   //Minor key accents
   stroke(255);
   strokeWeight(0.5);
-  line(348, 372, 372, 372);
-  line(409, 372, 433, 372);
-  line(531, 372, 555, 372);
-  line(592, 372, 616, 372);
-  line(653, 372, 677, 372);
+  line(348, 170, 348, 372);
+  line(349, 372, 371, 372);
+  line(372, 170, 372, 372);
+
+  line(409, 170, 409, 372);
+  line(410, 372, 432, 372);
+  line(433, 170, 433, 372);
+
+  line(531, 170, 531, 372);
+  line(532, 372, 554, 372);
+  line(555, 170, 555, 372);
+
+  line(592, 170, 592, 372);
+  line(593, 372, 615, 372);
+  line(616, 170, 616, 372);
+
+  line(653, 170, 653, 372);
+  line(654, 372, 676, 372);
+  line(677, 170, 677, 372);
 
   }
 
@@ -177,13 +191,13 @@ function setup() {
     if((mouseX >= 300 && mouseX < 345 && mouseY >= 175 && mouseY <=375) || (mouseX >= 300 && mouseX < 360 && mouseY > 375 && mouseY <=475)) {
       monoSynth.play(notes[0], velocity, time, dur);
       }
-      else if(mouseX >= 345 && mouseX < 375 && mouseY >= 175 && mouseY <=375) {
+      else if(mouseX >= 345 && mouseX < 375 && mouseY >= 172 && mouseY <=375) {
       monoSynth.play(notes[1], velocity, time, dur);
       }
       else if((mouseX >= 376 && mouseX < 405 && mouseY >= 175 && mouseY <=375) || (mouseX >= 361 && mouseX < 421 && mouseY > 375 && mouseY <=475)) {
         monoSynth.play(notes[2], velocity, time, dur);
         }
-      else if(mouseX >= 406 && mouseX < 436 && mouseY >= 100 && mouseY <=375) {
+      else if(mouseX >= 406 && mouseX < 436 && mouseY >= 172 && mouseY <=375) {
         monoSynth.play(notes[3], velocity, time, dur);
         }
           else if((mouseX >= 437 && mouseX < 482 && mouseY >= 175 && mouseY <=375) || (mouseX >= 422 && mouseX < 482 && mouseY > 375 && mouseY <=475)) {
@@ -192,19 +206,19 @@ function setup() {
             else if((mouseX >= 483 && mouseX < 528 && mouseY >= 175 && mouseY <=375) || (mouseX >= 483 && mouseX < 543 && mouseY > 375 && mouseY <=475)) {
               monoSynth.play(notes[5], velocity, time, dur);
               }
-            else if(mouseX >= 528 && mouseX < 558 && mouseY >= 175 && mouseY <=375) {
+            else if(mouseX >= 528 && mouseX < 558 && mouseY >= 172 && mouseY <=375) {
               monoSynth.play(notes[6], velocity, time, dur);
               }
               else if((mouseX >= 559 && mouseX < 589 && mouseY >= 175 && mouseY <=375) || (mouseX >= 544 && mouseX < 604 && mouseY > 375 && mouseY <=475)) {
                 monoSynth.play(notes[7], velocity, time, dur);
                 }
-              else if(mouseX >= 589 && mouseX < 619 && mouseY >= 175 && mouseY <=375) {
+              else if(mouseX >= 589 && mouseX < 619 && mouseY >= 172 && mouseY <=375) {
                 monoSynth.play(notes[8], velocity, time, dur);
                 }
                   else if((mouseX >= 620 && mouseX < 650 && mouseY >= 175 && mouseY <=375) || (mouseX >= 605 && mouseX < 665 && mouseY > 375 && mouseY <=475)) {
                     monoSynth.play(notes[9], velocity, time, dur);
                     }
-                  else if (mouseX >= 650 && mouseX < 680 && mouseY >= 175 && mouseY <=375) {
+                  else if (mouseX >= 650 && mouseX < 680 && mouseY >= 172 && mouseY <=375) {
                     monoSynth.play(notes[10], velocity, time, dur);
                       }
                       else if((mouseX >= 681 && mouseX < 726 && mouseY >= 175 && mouseY <=375) || (mouseX >= 666 && mouseX < 726 && mouseY > 375 && mouseY <=475)) {

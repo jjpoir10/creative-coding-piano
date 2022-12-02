@@ -230,44 +230,4 @@ function setup() {
         monoSynth.play(notes[12], velocity, time, dur);
         break;
     }
-
-    // if((mouseX >= 300 && mouseX < 345 && mouseY >= 175 && mouseY <=375) || (mouseX >= 300 && mouseX < 360 && mouseY > 375 && mouseY <=475)) {
-    //   monoSynth.play(notes[0], velocity, time, dur);
-    //   }
-      // if(mouseX >= 345 && mouseX < 375 && mouseY >= 172 && mouseY <=375) {
-      // monoSynth.play(notes[1], velocity, time, dur);
-      // }
-      // else if((mouseX >= 376 && mouseX < 405 && mouseY >= 175 && mouseY <=375) || (mouseX >= 361 && mouseX < 421 && mouseY > 375 && mouseY <=475)) {
-      //   monoSynth.play(notes[2], velocity, time, dur);
-      //   }
-      // else if(mouseX >= 406 && mouseX < 436 && mouseY >= 172 && mouseY <=375) {
-      //   monoSynth.play(notes[3], velocity, time, dur);
-      //   }
-          // else if((mouseX >= 437 && mouseX < 482 && mouseY >= 175 && mouseY <=375) || (mouseX >= 422 && mouseX < 482 && mouseY > 375 && mouseY <=475)) {
-          //   monoSynth.play(notes[4], velocity, time, dur);
-          //   }
-          //   else if((mouseX >= 483 && mouseX < 528 && mouseY >= 175 && mouseY <=375) || (mouseX >= 483 && mouseX < 543 && mouseY > 375 && mouseY <=475)) {
-          //     monoSynth.play(notes[5], velocity, time, dur);
-          //     }
-          //   else if(mouseX >= 528 && mouseX < 558 && mouseY >= 172 && mouseY <=375) {
-          //     monoSynth.play(notes[6], velocity, time, dur);
-          //     }
-          //     else if((mouseX >= 559 && mouseX < 589 && mouseY >= 175 && mouseY <=375) || (mouseX >= 544 && mouseX < 604 && mouseY > 375 && mouseY <=475)) {
-          //       monoSynth.play(notes[7], velocity, time, dur);
-          //       }
-          //     else if(mouseX >= 589 && mouseX < 619 && mouseY >= 172 && mouseY <=375) {
-          //       monoSynth.play(notes[8], velocity, time, dur);
-          //       }
-          //         else if((mouseX >= 620 && mouseX < 650 && mouseY >= 175 && mouseY <=375) || (mouseX >= 605 && mouseX < 665 && mouseY > 375 && mouseY <=475)) {
-          //           monoSynth.play(notes[9], velocity, time, dur);
-          //           }
-          //         else if (mouseX >= 650 && mouseX < 680 && mouseY >= 172 && mouseY <=375) {
-          //           monoSynth.play(notes[10], velocity, time, dur);
-          //             }
-          //             else if((mouseX >= 681 && mouseX < 726 && mouseY >= 175 && mouseY <=375) || (mouseX >= 666 && mouseX < 726 && mouseY > 375 && mouseY <=475)) {
-          //               monoSynth.play(notes[11], velocity, time, dur);
-          //               }
-          //             else if(mouseX >= 727 && mouseX < 787 && mouseY >= 175 && mouseY <=475) {
-          //                   monoSynth.play(notes[12], velocity, time, dur);
-          //                   }
   }

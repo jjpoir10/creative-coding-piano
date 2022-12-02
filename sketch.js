@@ -1,10 +1,22 @@
 let monoSynth;
+let autoSynth;
+var loopTimer = 0;
+let interval = 400;
+var counter = 0;
 let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb5", "B5", "C5"]
+
+//Mary Had a Little Lamb - 29 Notes
+let mary = ["E4", "D4", "C4", "D4", "E4", "E4", "E4", "x", "D4", "D4", "D4", "x", "E4", "G4", "G4", "x", "E4", "D4", "C4", "D4", "E4", "E4", "E4", "E4", "D4", "D4", "E4", "D4", "C4"]
 
 function setup() {
     let cnv = createCanvas(displayWidth, displayHeight);
-    cnv.mousePressed(playSynth);
+    cnv.mousePressed(playSynth1);
+    
+    var button = select('#play');
+    button.mousePressed(playSynth2);
+
     monoSynth = new p5.MonoSynth();
+    autoSynth = new p5.MonoSynth();
   }
   
   function draw() {
@@ -178,9 +190,14 @@ function setup() {
   line(653, 170, 653, 372);
   line(654, 372, 676, 372);
   line(677, 170, 677, 372);
+
+  //Auto-play buttons
+  noStroke();
+  fill(255, 0, 0);
+  ellipse(850, 150, 50, 50);
   }
 
-  function playSynth() {
+  function playSynth1() {
     userStartAudio();
 
     let velocity = 1;
@@ -231,3 +248,50 @@ function setup() {
         break;
     }
   }
+
+    // if (mouseX >= 825 && mouseX <= 875 && mouseY >= 125 && mouseY <= 175) {
+    //   if(millis() >= loopTimer) {
+    //     loopTimer += interval;
+    //     monoSynth.play(mary[counter], velocity, time, dur);
+    //     counter++;
+    //     if (counter > 29) {noLoop();}
+    //   }
+    // }
+
+    // if (mouseX >= 825 && mouseX <= 875 && mouseY >= 125 && mouseY <= 175) {
+    //   for (let i=0; i<mary.length; i++) {
+    //     switch (true) {
+    //       case mary[i] == mary[0]:
+    //        monoSynth.play(mary[0], velocity, time, dur);
+    //         break;
+    //       case mary[i] == mary[1]:
+    //         monoSynth.play(mary[1], velocity, time, dur);
+    //         break;
+        //   case mary[1]:
+        //     monoSynth.play(mary[1], velocity, time, dur);
+        //     break;
+        //  case mary[2]:
+        //     monoSynth.play(mary[2], velocity, time, dur);
+        //     break;
+          // case mary[i] == "G4":
+          //   monoSynth.play(mary[14], velocity, time, dur);
+          //    break;
+          // default:
+          //  monoSynth.play(mary[8], velocity, time, dur);
+  //       }
+  // }
+
+  function playSynth2() {
+    userStartAudio();
+
+    let velocity = 1;
+    let time = 0;
+    let dur = 1/6;
+
+      if(millis() >= loopTimer) {
+        loopTimer += interval;
+        autoSynth.play(mary[counter], velocity, time, dur);
+        counter++;
+        // if (counter > 29) {stop();}
+      }
+}

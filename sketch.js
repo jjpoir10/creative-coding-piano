@@ -250,36 +250,28 @@ function setup() {
   }
 
     // if (mouseX >= 825 && mouseX <= 875 && mouseY >= 125 && mouseY <= 175) {
-    //   if(millis() >= loopTimer) {
-    //     loopTimer += interval;
-    //     monoSynth.play(mary[counter], velocity, time, dur);
-    //     counter++;
-    //     if (counter > 29) {noLoop();}
-    //   }
-    // }
-
-    // if (mouseX >= 825 && mouseX <= 875 && mouseY >= 125 && mouseY <= 175) {
     //   for (let i=0; i<mary.length; i++) {
     //     switch (true) {
     //       case mary[i] == mary[0]:
     //        monoSynth.play(mary[0], velocity, time, dur);
-    //         break;
+    //         // break;
     //       case mary[i] == mary[1]:
     //         monoSynth.play(mary[1], velocity, time, dur);
-    //         break;
-        //   case mary[1]:
-        //     monoSynth.play(mary[1], velocity, time, dur);
-        //     break;
-        //  case mary[2]:
-        //     monoSynth.play(mary[2], velocity, time, dur);
-        //     break;
-          // case mary[i] == "G4":
-          //   monoSynth.play(mary[14], velocity, time, dur);
-          //    break;
-          // default:
-          //  monoSynth.play(mary[8], velocity, time, dur);
-  //       }
-  // }
+    //         // break;
+    //       case mary[1]:
+    //         monoSynth.play(mary[1], velocity, time, dur);
+    //         // break;
+    //      case mary[2]:
+    //         monoSynth.play(mary[2], velocity, time, dur);
+    //         // break;
+    //       case mary[i] == "G4":
+    //         monoSynth.play(mary[14], velocity, time, dur);
+    //         //  break;
+    //       default:
+    //        monoSynth.play(mary[8], velocity, time, dur);
+    //     }
+    //   }
+    // }
 
   function playSynth2() {
     userStartAudio();
@@ -287,11 +279,13 @@ function setup() {
     let velocity = 1;
     let time = 0;
     let dur = 1/6;
-
+    
+    while (counter < 29) {
       if(millis() >= loopTimer) {
         loopTimer += interval;
         autoSynth.play(mary[counter], velocity, time, dur);
         counter++;
-        // if (counter > 29) {stop();}
       }
+    }
+    counter = 0;
 }

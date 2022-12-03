@@ -8,6 +8,9 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
 //Mary Had a Little Lamb - 29 Notes
 let mary = ["E4", "D4", "C4", "D4", "E4", "E4", "E4", "x", "D4", "D4", "D4", "x", "E4", "G4", "G4", "x", "E4", "D4", "C4", "D4", "E4", "E4", "E4", "E4", "D4", "D4", "E4", "D4", "C4"]
 
+//Twinkle Twinkle Little Star - 47 Notes
+let twinkle = ["C4", "C4", "G4", "G4", "A4", "A4", "G4", "X", "F4", "F4", "E4", "E4", "D4", "D4", "C4", "X", "G4", "G4", "F4", "F4", "E4", "E4", "D4", "X", "G4", "G4", "F4", "F4", "E4", "E4", "D4", "X", "C4", "C4", "G4", "G4", "A4", "A4", "G4", "X", "F4", "F4", "E4", "E4", "D4", "D4", "C4"]
+
 function setup() {
     let cnv = createCanvas(displayWidth, displayHeight);
     cnv.mousePressed(playSynth1);

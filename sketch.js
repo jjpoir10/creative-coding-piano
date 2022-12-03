@@ -5,18 +5,21 @@ let interval = 400;
 var counter = 0;
 let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb5", "B5", "C5"]
 
-//Mary Had a Little Lamb - 29 Notes
-let mary = ["E4", "D4", "C4", "D4", "E4", "E4", "E4", "x", "D4", "D4", "D4", "x", "E4", "G4", "G4", "x", "E4", "D4", "C4", "D4", "E4", "E4", "E4", "E4", "D4", "D4", "E4", "D4", "C4"]
+ //Mary Had a Little Lamb - 31 Notes
+ let mary = [0, 0, "E4", "D4", "C4", "D4", "E4", "E4", "E4", 0, "D4", "D4", "D4", 0, "E4", "G4", "G4", 0, "E4", "D4", "C4", "D4", "E4", "E4", "E4", "E4", "D4", "D4", "E4", "D4", "C4"]
 
-//Twinkle Twinkle Little Star - 47 Notes
-let twinkle = ["C4", "C4", "G4", "G4", "A4", "A4", "G4", "X", "F4", "F4", "E4", "E4", "D4", "D4", "C4", "X", "G4", "G4", "F4", "F4", "E4", "E4", "D4", "X", "G4", "G4", "F4", "F4", "E4", "E4", "D4", "X", "C4", "C4", "G4", "G4", "A4", "A4", "G4", "X", "F4", "F4", "E4", "E4", "D4", "D4", "C4"]
+ //Twinkle Twinkle Little Star - 50 Notes
+ let twinkle = [0, 0, 0, "C4", "C4", "G4", "G4", "A5", "A5", "G4", 0, "F4", "F4", "E4", "E4", "D4", "D4", "C4", 0, "G4", "G4", "F4", "F4", "E4", "E4", "D4", 0, "G4", "G4", "F4", "F4", "E4", "E4", "D4", 0, "C4", "C4", "G4", "G4", "A5", "A5", "G4", 0, "F4", "F4", "E4", "E4", "D4", "D4", "C4"]
 
 function setup() {
     let cnv = createCanvas(displayWidth, displayHeight);
     cnv.mousePressed(playSynth1);
     
-    var button = select('#play');
-    button.mousePressed(playSynth2);
+    var button1 = select('#mary');
+    button1.mousePressed(playSynth2);
+
+    var button2 = select('#twinkle');
+    button2.mousePressed(playSynth3);
 
     monoSynth = new p5.MonoSynth();
     autoSynth = new p5.MonoSynth();
@@ -283,7 +286,7 @@ function setup() {
     let time = 0;
     let dur = 1/6;
     
-    while (counter < 29) {
+    while (counter < 31) {
       if(millis() >= loopTimer) {
         loopTimer += interval;
         autoSynth.play(mary[counter], velocity, time, dur);
@@ -291,4 +294,21 @@ function setup() {
       }
     }
     counter = 0;
+}
+
+function playSynth3() {
+  userStartAudio();
+
+  let velocity = 1;
+  let time = 0;
+  let dur = 1/6;
+  
+  while (counter < 50) {
+    if(millis() >= loopTimer) {
+      loopTimer += interval;
+      autoSynth.play(twinkle[counter], velocity, time, dur);
+      counter++;
+    }
+  }
+  counter = 0;
 }

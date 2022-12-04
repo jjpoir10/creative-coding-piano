@@ -19,6 +19,7 @@ function setup() {
 
     let colMary = color(254, 57, 57);
     let colTwinkle = color(30, 144, 255);
+    let colWheels = color (252, 235, 74);
     let fontColor = color(0, 0, 0, 0.5);
     
     var button1 = createButton('x');
@@ -38,6 +39,15 @@ function setup() {
     button2.position(890, 175);
     button2.size(35);
     button2.mousePressed(playSynth3);
+
+    var button3 = createButton ('x');
+    button3.style ('background-color', colWheels);
+    button3.style ('border-radius', 50 + "%");
+    button3.style ('font-size', 25 + 'px');
+    button3.style ('color', fontColor);
+    button3.position (940,175);
+    button3.size (35);
+    button3.mousePressed (playSynth4);
 
     monoSynth = new p5.MonoSynth();
     autoSynth = new p5.MonoSynth();

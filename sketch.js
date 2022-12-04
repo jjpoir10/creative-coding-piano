@@ -25,7 +25,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
 
     let colMary = color(254, 57, 57);
     let colTwinkle = color(30, 144, 255);
-    let colWheels = color (252, 235, 74);
+    let colWheels = color(252, 235, 74);
     let fontColor = color(0, 0, 0, 0.5);
     
     var button1 = createButton('x');
@@ -46,14 +46,14 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     button2.size(35);
     button2.mousePressed(playSynth3);
 
-    var button3 = createButton ('x');
-    button3.style ('background-color', colWheels);
-    button3.style ('border-radius', 50 + "%");
-    button3.style ('font-size', 25 + 'px');
-    button3.style ('color', fontColor);
-    button3.position (970,156);
-    button3.size (35);
-    button3.mousePressed (playSynth4);
+    var button3 = createButton('x');
+    button3.style('background-color', colWheels);
+    button3.style('border-radius', 50 + "%");
+    button3.style('font-size', 25 + 'px');
+    button3.style('color', fontColor);
+    button3.position(970,156);
+    button3.size(35);
+    button3.mousePressed(playSynth4);
 
     monoSynth = new p5.MonoSynth();
     autoSynth = new p5.MonoSynth();
@@ -78,6 +78,22 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     stroke(0);
     strokeWeight(2);
     rect(300, 79, 488, 67);
+
+    //Piano speaker
+    stroke(255);
+    fill(105, 105, 105);
+    rect(828, 225, 215, 252, 20, 20, 0, 0);
+    stroke(0);
+    fill(211, 211, 211, 85);
+    ellipse(935, 351, 195, 230);
+    line(910, 250, 960, 250);
+    line(890, 260, 980, 260);
+    line(890, 260, 980, 260);
+    line(875, 270, 995, 270);
+    line(865, 280, 1005, 280);
+
+
+
 
     //Piano keys
 
@@ -346,14 +362,14 @@ function playSynth3() {
   counter = 0;
 }
 
-function playSynth4 (){
+function playSynth4(){
   userStartAudio ();
 
     let velocity = 1;
     let time = 0;
     let dur = 1/6;
 
-  while (counter <39) {
+  while (counter < 39) {
     if (millis ()>= loopTimer){
       loopTimer += interval;
       autoSynth.play (wheels[counter], velocity, time, dur);

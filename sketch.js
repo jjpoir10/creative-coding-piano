@@ -14,15 +14,27 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
 function setup() {
     let cnv = createCanvas(displayWidth, displayHeight);
     cnv.mousePressed(playSynth1);
+
+    let colMary = color(254, 57, 57);
+    let colTwinkle = color(30, 144, 255);
+    let fontColor = color(0, 0, 0, 0.5);
     
-    var button1 = createButton('Mary');
-    button1.position(850, 150);
-    button1.size(100);
+    var button1 = createButton('x');
+    button1.style('background-color', colMary);
+    button1.style('border-radius', 50 + "%");
+    button1.style('font-size', 25 + 'px');
+    button1.style('color', fontColor);
+    button1.position(840, 175);
+    button1.size(35);
     button1.mousePressed(playSynth2);
 
-    var button2 = createButton('Twinkle');
-    button2.position(850, 200);
-    button2.size(100);
+    var button2 = createButton('x');
+    button2.style('background-color', colTwinkle);
+    button2.style('border-radius', 50 + "%");
+    button2.style('font-size', 25 + 'px');
+    button2.style('color', fontColor);
+    button2.position(890, 175);
+    button2.size(35);
     button2.mousePressed(playSynth3);
 
     monoSynth = new p5.MonoSynth();
@@ -200,11 +212,6 @@ function setup() {
   line(653, 170, 653, 372);
   line(654, 372, 676, 372);
   line(677, 170, 677, 372);
-
-  //Auto-play buttons
-  noStroke();
-  fill(255, 0, 0);
-  ellipse(850, 150, 50, 50);
   }
 
   function playSynth1() {

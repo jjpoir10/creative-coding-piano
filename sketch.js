@@ -15,10 +15,14 @@ function setup() {
     let cnv = createCanvas(displayWidth, displayHeight);
     cnv.mousePressed(playSynth1);
     
-    var button1 = select('#mary');
+    var button1 = createButton('Mary');
+    button1.position(850, 150);
+    button1.size(100);
     button1.mousePressed(playSynth2);
 
-    var button2 = select('#twinkle');
+    var button2 = createButton('Twinkle');
+    button2.position(850, 200);
+    button2.size(100);
     button2.mousePressed(playSynth3);
 
     monoSynth = new p5.MonoSynth();

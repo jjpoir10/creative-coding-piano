@@ -27,7 +27,7 @@ function setup() {
     button1.style('border-radius', 50 + "%");
     button1.style('font-size', 25 + 'px');
     button1.style('color', fontColor);
-    button1.position(850, 150);
+    button1.position(850, 156);
     button1.size(35);
     button1.mousePressed(playSynth2);
 
@@ -36,7 +36,7 @@ function setup() {
     button2.style('border-radius', 50 + "%");
     button2.style('font-size', 25 + 'px');
     button2.style('color', fontColor);
-    button2.position(910, 150);
+    button2.position(910, 156);
     button2.size(35);
     button2.mousePressed(playSynth3);
 
@@ -45,7 +45,7 @@ function setup() {
     button3.style ('border-radius', 50 + "%");
     button3.style ('font-size', 25 + 'px');
     button3.style ('color', fontColor);
-    button3.position (970,150);
+    button3.position (970,156);
     button3.size (35);
     button3.mousePressed (playSynth4);
 
@@ -63,7 +63,7 @@ function setup() {
     fill (255);
     textSize (30);
     textFont ("Playfair Display");
-    text ("Creative Coding", 830, 120);
+    text ("Creative Coding", 825, 120);
 
     //Piano screen
     fill(156, 175, 136);

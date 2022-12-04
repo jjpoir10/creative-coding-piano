@@ -1,9 +1,12 @@
 let monoSynth;
 let autoSynth;
-// let fontRegular;
+let fontRegular;
 var loopTimer = 0;
 let interval = 400;
 var counter = 0;
+let x;
+let y;
+let space = 0;
 let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb5", "B5", "C5"]
 
  //Mary Had a Little Lamb - 33 Notes
@@ -15,9 +18,9 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
  //The Wheels on the Bus - 39 Notes
  let wheels = [0, 0, 0, 0, "D4", "G4", 0, "G4", "G4", "G4", "B5", "D5", "B5", "G4", 0, "A5", "A5", "A5", 0, "Gb4", "E4", "D4", 0, "D4", "G4", 0, "G4", "G4", "G4", "B5", "D5", "B5", "G4", 0, "A5", 0, "D4", 0, "G4"]
 
-//  function preload (){
-//   fontRegular = loadFont (index/'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap') 
-// }
+ function preload (){
+  fontRegular = loadFont(url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap')) 
+}
 
  function setup() {
     let cnv = createCanvas(displayWidth, displayHeight);
@@ -27,6 +30,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     let colTwinkle = color(30, 144, 255);
     let colWheels = color(252, 235, 74);
     let fontColor = color(0, 0, 0, 0.5);
+    let myFont = textFont(fontRegular);
     
     var button1 = createButton('x');
     button1.style('background-color', colMary);
@@ -57,6 +61,12 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
 
     monoSynth = new p5.MonoSynth();
     autoSynth = new p5.MonoSynth();
+
+    // for (x = 935; x < 1130; x += space){
+    //   for (y = 351; y < 581; y += space) {
+    //     ellipse(x, y, 5, 5);
+    //   }
+    // }
   }
   
   function draw() {
@@ -66,10 +76,10 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     fill(0);
     noStroke();
     rect(225, 50, 850, 450);
-    fill (255);
-    textSize (30);
-    textFont ("Playfair Display");
-    text ("Creative Coding", 825, 120);
+    fill(255);
+    textSize(30);
+    textFont("Playfair Display");
+    text("Creative Coding", 825, 120);
 
     //Piano screen
     fill(156, 175, 136);
@@ -86,11 +96,12 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     stroke(0);
     fill(211, 211, 211, 85);
     ellipse(935, 351, 195, 230);
-    line(910, 250, 960, 250);
-    line(890, 260, 980, 260);
-    line(890, 260, 980, 260);
-    line(875, 270, 995, 270);
-    line(865, 280, 1005, 280);
+
+    // line(910, 250, 960, 250);
+    // line(890, 260, 980, 260);
+    // line(890, 260, 980, 260);
+    // line(875, 270, 995, 270);
+    // line(865, 280, 1005, 280);
 
 
 
@@ -108,6 +119,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 300 && mouseX < 345 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed ===true && mouseX >= 300 && mouseX < 360 && mouseY > 375 && mouseY <=475)) {
     textSize(36);
     fill(0);
+    textFont(myFont);
     text("Note: C", 330, 125);
     fill(241, 235, 156);
     }

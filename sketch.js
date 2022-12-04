@@ -11,8 +11,8 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
  //Twinkle Twinkle Little Star - 50 Notes
  let twinkle = [0, 0, 0, "C4", "C4", "G4", "G4", "A5", "A5", "G4", 0, "F4", "F4", "E4", "E4", "D4", "D4", "C4", 0, "G4", "G4", "F4", "F4", "E4", "E4", "D4", 0, "G4", "G4", "F4", "F4", "E4", "E4", "D4", 0, "C4", "C4", "G4", "G4", "A5", "A5", "G4", 0, "F4", "F4", "E4", "E4", "D4", "D4", "C4"]
 
- //The Wheels on the Bus - 22 Notes
- let wheels = [0,0,0, "D4", "G4", 0, "G4", "G4", "G4", "B5", "D5", "B5", "G4", 0, "A5", "A5", "A5", 0, "Gb4", "E4", "D4", 0]
+ //The Wheels on the Bus - 36 Notes
+ let wheels = [0, 0, "D4", "G4", 0, "G4", "G4", "G4", "B5", "D5", "B5", "G4", 0, "A5", "A5", "A5", 0, "Gb4", "E4", "D4", 0, "D4", "G4", 0, "G4", "G4", "G4", "B5", "d5", "B5", "G4", 0, "A5", 0, "D4", "G4"]
 function setup() {
     let cnv = createCanvas(displayWidth, displayHeight);
     cnv.mousePressed(playSynth1);
@@ -343,7 +343,7 @@ function playSynth4 (){
     let time = 0;
     let dur = 1/6;
 
-  while (counter <22) {
+  while (counter <36) {
     if (millis ()>= loopTimer){
       loopTimer += interval;
       autoSynth.play (wheels[counter], velocity, time, dur);

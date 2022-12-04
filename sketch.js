@@ -1,5 +1,6 @@
 let monoSynth;
 let autoSynth;
+// let fontRegular;
 var loopTimer = 0;
 let interval = 400;
 var counter = 0;
@@ -13,7 +14,12 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
 
  //The Wheels on the Bus - 39 Notes
  let wheels = [0, 0, 0, 0, "D4", "G4", 0, "G4", "G4", "G4", "B5", "D5", "B5", "G4", 0, "A5", "A5", "A5", 0, "Gb4", "E4", "D4", 0, "D4", "G4", 0, "G4", "G4", "G4", "B5", "D5", "B5", "G4", 0, "A5", 0, "D4", 0, "G4"]
-function setup() {
+
+//  function preload (){
+//   fontRegular = loadFont (index/'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap') 
+// }
+
+ function setup() {
     let cnv = createCanvas(displayWidth, displayHeight);
     cnv.mousePressed(playSynth1);
 

@@ -34,7 +34,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     button1.style('border-radius', 50 + "%");
     button1.style('font-size', 25 + 'px');
     button1.style('color', fontColor);
-    button1.position(850, 156);
+    button1.position(853, 156);
     button1.size(35);
     button1.mousePressed(playSynth2);
 
@@ -43,7 +43,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     button2.style('border-radius', 50 + "%");
     button2.style('font-size', 25 + 'px');
     button2.style('color', fontColor);
-    button2.position(910, 156);
+    button2.position(918, 156);
     button2.size(35);
     button2.mousePressed(playSynth3);
 
@@ -52,7 +52,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     button3.style('border-radius', 50 + "%");
     button3.style('font-size', 25 + 'px');
     button3.style('color', fontColor);
-    button3.position(970,156);
+    button3.position(983,156);
     button3.size(35);
     button3.mousePressed(playSynth4);
 
@@ -68,9 +68,9 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     noStroke();
     rect(225, 50, 850, 450);
     fill(255);
-    textSize(30);
+    textSize(32);
     textFont("Playfair Display");
-    text("Creative Coding", 825, 120);
+    text("Creative Coding", 833, 122);
 
     //Piano screen
     fill(140, 160, 145);
@@ -111,7 +111,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 300 && mouseX < 345 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed ===true && mouseX >= 300 && mouseX < 360 && mouseY > 375 && mouseY <=475)) {
     textSize(36);
     fill(0);
-    text("Note: C", 330, 125);
+    text("C", 315, 125);
     fill(241, 235, 156);
     }
     rect(300, 175, 60, 300);
@@ -121,7 +121,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 376 && mouseX < 405 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 361 && mouseX < 421 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("Note: D", 330, 125);
+      text("D", 376, 125);
       fill(241, 235, 156);
       }
     rect(361, 175, 60, 300);
@@ -131,7 +131,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 437 && mouseX < 482 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 422 && mouseX < 482 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("Note: E", 330, 125);
+      text("E", 437, 125);
       fill(241, 235, 156);
       }
     rect(422, 175, 60, 300);
@@ -141,7 +141,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 483 && mouseX < 528 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 483 && mouseX < 543 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("Note: F", 330, 125);
+      text("F", 498, 125);
       fill(241, 235, 156);
       }
       rect(483, 175, 60, 300);
@@ -151,7 +151,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 559 && mouseX < 589 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 544 && mouseX < 604 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("Note: G", 330, 125);
+      text("G", 559, 125);
       fill(241, 235, 156);
       }
       rect(544, 175, 60, 300);
@@ -161,7 +161,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 620 && mouseX < 650 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 605 && mouseX < 665 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("Note: A", 330, 125);
+      text("A", 620, 125);
       fill(241, 235, 156);
       }
       rect(605, 175, 60, 300);
@@ -171,7 +171,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 681 && mouseX < 726 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 666 && mouseX < 726 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("Note: B", 330, 125);
+      text("B", 686, 125);
       fill(241, 235, 156);
       }
     rect(666, 175, 60, 300);
@@ -181,7 +181,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if(mouseIsPressed === true && mouseX >= 727 && mouseX < 787 && mouseY >= 175 && mouseY <=475) {
       textSize(36);
       fill(0);
-      text("Note: C", 330, 125);
+      text("C", 742, 125);
       fill(241, 235, 156);
       }
      rect(727, 175, 60, 300);
@@ -190,7 +190,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     fill (0);
     if(mouseIsPressed === true && mouseX >= 345 && mouseX < 375 && mouseY >= 172 && mouseY <=375) {
       textSize(36);
-      text("Note: Db", 330, 125);
+      text("Db", 338, 125);
       fill(241, 235, 156);
     }
       rect (345, 172, 30, 203);
@@ -199,7 +199,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
    fill (0);
    if(mouseIsPressed === true && mouseX >= 406 && mouseX < 436 && mouseY >= 172 && mouseY <=375) {
      textSize(36);
-     text("Note: Eb", 330, 125);
+     text("Eb", 399, 125);
      fill(241, 235, 156);
    }
      rect (406, 172, 30, 203);
@@ -208,7 +208,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
   fill (0);
   if(mouseIsPressed === true && mouseX >= 528 && mouseX < 558 && mouseY >= 172 && mouseY <=375) {
     textSize(36);
-    text("Note: Gb", 330, 125);
+    text("Gb", 521, 125);
     fill(241, 235, 156);
   }
     rect (528, 172, 30, 203);
@@ -217,7 +217,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
   fill (0);
   if(mouseIsPressed === true && mouseX >= 589 && mouseX < 619 && mouseY >= 172 && mouseY <=375) {
     textSize(36);
-    text("Note: Ab", 330, 125);
+    text("Ab", 582, 125);
     fill(241, 235, 156);
   }
     rect (589, 172, 30, 203);
@@ -226,7 +226,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
   fill (0);
   if(mouseIsPressed === true && mouseX >= 650 && mouseX < 680 && mouseY >= 172 && mouseY <=375) {
     textSize(36);
-    text("Note: Bb", 330, 125);
+    text("Bb", 643, 125);
     fill(241, 235, 156);
   }
     rect (650, 172, 30, 203);

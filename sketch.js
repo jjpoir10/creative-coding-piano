@@ -1,6 +1,7 @@
 let monoSynth;
 let autoSynth;
 let myFont;
+let myImage;
 var loopTimer = 0;
 let interval = 400;
 var counter = 0;
@@ -17,6 +18,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
 
  function preload() {
   myFont = loadFont('assets/RobotoSlab-Medium.ttf');
+  myImage = loadImage('assets/white-note.png');
 }
 
  function setup() {
@@ -70,7 +72,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     fill(255);
     textSize(32);
     textFont("Playfair Display");
-    text("Creative Coding", 833, 122);
+    text("Creative Coding", 825, 122);
 
     //Piano screen
     fill(140, 160, 145);
@@ -87,6 +89,12 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     stroke(0);
     fill(211, 211, 211, 85);
     ellipse(935, 351, 195, 230);
+
+    image(myImage, 1037, 90, 15, 20);
+
+    //Play button icons
+    // fill(255);
+    // triangle(845, 150, 845, 172, 865, 160);
 
     // line(910, 250, 960, 250);
     // line(890, 260, 980, 260);
@@ -111,7 +119,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 300 && mouseX < 345 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed ===true && mouseX >= 300 && mouseX < 360 && mouseY > 375 && mouseY <=475)) {
     textSize(36);
     fill(0);
-    text("C", 315, 125);
+    text("C", 317, 125);
     fill(241, 235, 156);
     }
     rect(300, 175, 60, 300);
@@ -121,7 +129,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 376 && mouseX < 405 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 361 && mouseX < 421 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("D", 376, 125);
+      text("D", 378, 125);
       fill(241, 235, 156);
       }
     rect(361, 175, 60, 300);
@@ -131,7 +139,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 437 && mouseX < 482 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 422 && mouseX < 482 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("E", 437, 125);
+      text("E", 439, 125);
       fill(241, 235, 156);
       }
     rect(422, 175, 60, 300);
@@ -141,7 +149,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 483 && mouseX < 528 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 483 && mouseX < 543 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("F", 498, 125);
+      text("F", 500, 125);
       fill(241, 235, 156);
       }
       rect(483, 175, 60, 300);
@@ -151,7 +159,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 559 && mouseX < 589 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 544 && mouseX < 604 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("G", 559, 125);
+      text("G", 560, 125);
       fill(241, 235, 156);
       }
       rect(544, 175, 60, 300);
@@ -161,7 +169,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 620 && mouseX < 650 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 605 && mouseX < 665 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("A", 620, 125);
+      text("A", 622, 125);
       fill(241, 235, 156);
       }
       rect(605, 175, 60, 300);
@@ -365,17 +373,17 @@ function playSynth3() {
   counter = 0;
 }
 
-function playSynth4(){
-  userStartAudio ();
+function playSynth4() {
+  userStartAudio();
 
     let velocity = 1;
     let time = 0;
     let dur = 1/6;
 
   while (counter < 39) {
-    if (millis ()>= loopTimer){
+    if (millis() >= loopTimer) {
       loopTimer += interval;
-      autoSynth.play (wheels[counter], velocity, time, dur);
+      autoSynth.play(wheels[counter], velocity, time, dur);
       counter ++;
     }
   }

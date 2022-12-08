@@ -29,6 +29,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     let colTwinkle = color(30, 144, 255);
     let colWheels = color(252, 235, 74);
     let fontColor = color(0, 0, 0, 0.5);
+    let buttonStroke = color (192,192,192);
     textFont(myFont);
     
     var button1 = createButton('x');
@@ -36,6 +37,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     button1.style('border-radius', 50 + "%");
     button1.style('font-size', 25 + 'px');
     button1.style('color', fontColor);
+    button1.style ('border-color', buttonStroke);
     button1.position(853, 156);
     button1.size(35);
     button1.mousePressed(playSynth2);
@@ -70,9 +72,8 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     noStroke();
     rect(225, 50, 850, 450);
     fill(255);
-    textSize(32);
-    textFont("Playfair Display");
-    text("Creative Coding", 825, 122);
+    textSize(30);
+    text("Creative Coding", 820, 118);
 
     //Piano screen
     fill(140, 160, 145);
@@ -83,7 +84,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     rect(300, 79, 488, 67);
 
     //Piano speaker
-    stroke(0);
+    stroke(192,192,192);
     fill(211, 211, 211, 85);
     ellipse(935, 340, 195, 230);
 

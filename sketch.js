@@ -34,6 +34,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     
     var button1 = createButton('x');
     button1.style('background-color', colMary);
+    button1.style('border-style', "solid");
     button1.style('border-radius', 50 + "%");
     button1.style('font-size', 25 + 'px');
     button1.style('color', fontColor);

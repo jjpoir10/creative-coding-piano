@@ -83,12 +83,9 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     rect(300, 79, 488, 67);
 
     //Piano speaker
-    stroke(255);
-    fill(105, 105, 105);
-    rect(828, 225, 215, 252, 20, 20, 0, 0);
     stroke(0);
     fill(211, 211, 211, 85);
-    ellipse(935, 351, 195, 230);
+    ellipse(935, 340, 195, 230);
 
     //Play button icons
     // fill(255);

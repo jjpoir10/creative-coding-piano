@@ -19,6 +19,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
  function preload() {
   myFont = loadFont('assets/RobotoSlab-Medium.ttf');
   myImage = loadImage('assets/transparent-music-note.png');
+  baseImage = loadImage('assets/table.jpg');
 }
 
  function setup() {
@@ -71,6 +72,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
   
   function draw() {
     background(200);
+    image(baseImage, 0, 0, width, height);
 
     //Piano body
     fill(0);

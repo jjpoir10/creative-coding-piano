@@ -29,7 +29,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     let colTwinkle = color(30, 144, 255);
     let colWheels = color(252, 235, 74);
     let fontColor = color(0, 0, 0, 0.5);
-    let buttonStroke = color (192,192,192);
+    let buttonStroke = color (185,185,185);
     textFont(myFont);
     
     var button1 = createButton('x');
@@ -48,6 +48,8 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     button2.style('border-radius', 50 + "%");
     button2.style('font-size', 25 + 'px');
     button2.style('color', fontColor);
+    button2.style ('border-style', "solid");
+    button2.style ('border-color', buttonStroke);
     button2.position(918, 156);
     button2.size(35);
     button2.mousePressed(playSynth3);
@@ -57,6 +59,8 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     button3.style('border-radius', 50 + "%");
     button3.style('font-size', 25 + 'px');
     button3.style('color', fontColor);
+    button3.style ('border-style', "solid");
+    button3.style ('border-color', buttonStroke);
     button3.position(983,156);
     button3.size(35);
     button3.mousePressed(playSynth4);

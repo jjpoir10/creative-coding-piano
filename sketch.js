@@ -18,7 +18,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
 
  function preload() {
   myFont = loadFont('assets/RobotoSlab-Medium.ttf');
-  myImage = loadImage('assets/white-note.png');
+  myImage = loadImage('assets/transparent-music-note.png');
 }
 
  function setup() {
@@ -90,8 +90,6 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     fill(211, 211, 211, 85);
     ellipse(935, 351, 195, 230);
 
-    image(myImage, 1037, 90, 15, 20);
-
     //Play button icons
     // fill(255);
     // triangle(845, 150, 845, 172, 865, 160);
@@ -120,6 +118,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     textSize(36);
     fill(0);
     text("C", 317, 125);
+    image(myImage, 342, 88, 15, 20);
     fill(241, 235, 156);
     }
     rect(300, 175, 60, 300);
@@ -130,6 +129,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
       textSize(36);
       fill(0);
       text("D", 378, 125);
+      image(myImage, 403, 88, 15, 20);
       fill(241, 235, 156);
       }
     rect(361, 175, 60, 300);
@@ -140,6 +140,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
       textSize(36);
       fill(0);
       text("E", 439, 125);
+      image(myImage, 464, 88, 15, 20);
       fill(241, 235, 156);
       }
     rect(422, 175, 60, 300);
@@ -150,6 +151,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
       textSize(36);
       fill(0);
       text("F", 500, 125);
+      image(myImage, 525, 88, 15, 20);
       fill(241, 235, 156);
       }
       rect(483, 175, 60, 300);
@@ -160,6 +162,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
       textSize(36);
       fill(0);
       text("G", 560, 125);
+      image(myImage, 585, 88, 15, 20);
       fill(241, 235, 156);
       }
       rect(544, 175, 60, 300);
@@ -169,7 +172,8 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if((mouseIsPressed === true && mouseX >= 620 && mouseX < 650 && mouseY >= 175 && mouseY <=375) || (mouseIsPressed === true && mouseX >= 605 && mouseX < 665 && mouseY > 375 && mouseY <=475)) {
       textSize(36);
       fill(0);
-      text("A", 622, 125);
+      text("A", 620, 125);
+      image(myImage, 645, 88, 15, 20);
       fill(241, 235, 156);
       }
       rect(605, 175, 60, 300);
@@ -180,6 +184,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
       textSize(36);
       fill(0);
       text("B", 686, 125);
+      image(myImage, 711, 88, 15, 20);
       fill(241, 235, 156);
       }
     rect(666, 175, 60, 300);
@@ -190,6 +195,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
       textSize(36);
       fill(0);
       text("C", 742, 125);
+      image(myImage, 767, 88, 15, 20);
       fill(241, 235, 156);
       }
      rect(727, 175, 60, 300);
@@ -199,6 +205,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     if(mouseIsPressed === true && mouseX >= 345 && mouseX < 375 && mouseY >= 172 && mouseY <=375) {
       textSize(36);
       text("Db", 338, 125);
+      image(myImage, 383, 88, 15, 20);
       fill(241, 235, 156);
     }
       rect (345, 172, 30, 203);
@@ -208,6 +215,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
    if(mouseIsPressed === true && mouseX >= 406 && mouseX < 436 && mouseY >= 172 && mouseY <=375) {
      textSize(36);
      text("Eb", 399, 125);
+     image(myImage, 444, 88, 15, 20);
      fill(241, 235, 156);
    }
      rect (406, 172, 30, 203);
@@ -217,6 +225,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
   if(mouseIsPressed === true && mouseX >= 528 && mouseX < 558 && mouseY >= 172 && mouseY <=375) {
     textSize(36);
     text("Gb", 521, 125);
+    image(myImage, 566, 88, 15, 20);
     fill(241, 235, 156);
   }
     rect (528, 172, 30, 203);
@@ -226,6 +235,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
   if(mouseIsPressed === true && mouseX >= 589 && mouseX < 619 && mouseY >= 172 && mouseY <=375) {
     textSize(36);
     text("Ab", 582, 125);
+    image(myImage, 629, 88, 15, 20);
     fill(241, 235, 156);
   }
     rect (589, 172, 30, 203);
@@ -235,6 +245,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
   if(mouseIsPressed === true && mouseX >= 650 && mouseX < 680 && mouseY >= 172 && mouseY <=375) {
     textSize(36);
     text("Bb", 643, 125);
+    image(myImage, 688, 88, 15, 20);
     fill(241, 235, 156);
   }
     rect (650, 172, 30, 203);

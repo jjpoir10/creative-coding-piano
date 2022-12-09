@@ -43,6 +43,7 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     button1.position(853, 156);
     button1.size(35);
     button1.mousePressed(playSynth2);
+    // button1.mouseClicked();
 
     var button2 = createButton('x');
     button2.style('background-color', colTwinkle);
@@ -94,19 +95,6 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     stroke(192,192,192);
     fill(211, 211, 211, 85);
     ellipse(935, 340, 195, 230);
-
-    //Play button icons
-    // fill(255);
-    // triangle(845, 150, 845, 172, 865, 160);
-
-    // line(910, 250, 960, 250);
-    // line(890, 260, 980, 260);
-    // line(890, 260, 980, 260);
-    // line(875, 270, 995, 270);
-    // line(865, 280, 1005, 280);
-
-
-
 
     //Piano keys
 
@@ -277,7 +265,8 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
   line(653, 170, 653, 372);
   line(654, 372, 676, 372);
   line(677, 170, 677, 372);
-  }
+
+}
 
   function playSynth1() {
     userStartAudio();
@@ -331,30 +320,6 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     }
   }
 
-    // if (mouseX >= 825 && mouseX <= 875 && mouseY >= 125 && mouseY <= 175) {
-    //   for (let i=0; i<mary.length; i++) {
-    //     switch (true) {
-    //       case mary[i] == mary[0]:
-    //        monoSynth.play(mary[0], velocity, time, dur);
-    //         // break;
-    //       case mary[i] == mary[1]:
-    //         monoSynth.play(mary[1], velocity, time, dur);
-    //         // break;
-    //       case mary[1]:
-    //         monoSynth.play(mary[1], velocity, time, dur);
-    //         // break;
-    //      case mary[2]:
-    //         monoSynth.play(mary[2], velocity, time, dur);
-    //         // break;
-    //       case mary[i] == "G4":
-    //         monoSynth.play(mary[14], velocity, time, dur);
-    //         //  break;
-    //       default:
-    //        monoSynth.play(mary[8], velocity, time, dur);
-    //     }
-    //   }
-    // }
-
   function playSynth2() {
     userStartAudio();
 
@@ -402,6 +367,37 @@ function playSynth4() {
       autoSynth.play(wheels[counter], velocity, time, dur);
       counter ++;
     }
+    fill(255);
+    rect(50,50,50,50);
   }
   counter = 0;
 }
+
+// function mouseClicked() {
+// if (mouseX >= 855 && mouseY >=157 && mouseX <= 882 && mouseY <= 189) {
+//   for (let i = 0; i < 32; i++) {
+//     switch (true) {
+//       case mary[counter] == mary[4]:
+//         textSize(36);
+//         fill(0);
+//         text("E", 439, 125);
+//         image(myImage, 464, 88, 15, 20);
+//         break;
+//     //   case mary[i] == mary[1]:
+//     //     monoSynth.play(mary[1], velocity, time, dur);
+//     //     // break;
+//     //   case mary[1]:
+//     //     monoSynth.play(mary[1], velocity, time, dur);
+//     //     // break;
+//     //  case mary[2]:
+//     //     monoSynth.play(mary[2], velocity, time, dur);
+//     //     // break;
+//     //   case mary[i] == "G4":
+//     //     monoSynth.play(mary[14], velocity, time, dur);
+//     //     //  break;
+//       default:
+//         background(220);
+//       }
+//   }
+// }
+// }

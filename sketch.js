@@ -30,28 +30,27 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     let colTwinkle = color(30, 144, 255);
     let colWheels = color(252, 235, 74);
     let fontColor = color(0, 0, 0, 0.5);
-    let buttonStroke = color (185,185,185);
+    let buttonStroke = color(185, 185 ,185);
     textFont(myFont);
     
     var button1 = createButton('x');
     button1.style('background-color', colMary);
-    button1.style('border-style', "solid");
     button1.style('border-radius', 50 + "%");
     button1.style('font-size', 25 + 'px');
     button1.style('color', fontColor);
-    button1.style ('border-color', buttonStroke);
+    button1.style('border-style', "solid");
+    button1.style('border-color', buttonStroke);
     button1.position(853, 156);
     button1.size(35);
     button1.mousePressed(playSynth2);
-    // button1.mouseClicked();
 
     var button2 = createButton('x');
     button2.style('background-color', colTwinkle);
     button2.style('border-radius', 50 + "%");
     button2.style('font-size', 25 + 'px');
     button2.style('color', fontColor);
-    button2.style ('border-style', "solid");
-    button2.style ('border-color', buttonStroke);
+    button2.style('border-style', "solid");
+    button2.style('border-color', buttonStroke);
     button2.position(918, 156);
     button2.size(35);
     button2.mousePressed(playSynth3);
@@ -61,8 +60,8 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     button3.style('border-radius', 50 + "%");
     button3.style('font-size', 25 + 'px');
     button3.style('color', fontColor);
-    button3.style ('border-style', "solid");
-    button3.style ('border-color', buttonStroke);
+    button3.style('border-style', "solid");
+    button3.style('border-color', buttonStroke);
     button3.position(983,156);
     button3.size(35);
     button3.mousePressed(playSynth4);
@@ -82,6 +81,15 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     fill(255);
     textSize(30);
     text("Creative Coding", 820, 118);
+    stroke(255);
+    line(227, 52, 227, 498);
+    line(227, 52, 1073, 52);
+    line(232, 56, 232, 494);
+    line(232, 56, 1068, 56);
+    line(1068, 56, 1068, 493);
+    line(232, 493, 1068, 493);
+    line(1073, 52, 1073, 498);
+    line(227, 498, 1073, 498);
 
     //Piano screen
     fill(140, 160, 145);
@@ -95,6 +103,15 @@ let notes = ["C4", "Db4", "D4", "Eb4", "E4", "F4", "Gb4", "G4", "Ab5", "A5", "Bb
     stroke(192,192,192);
     fill(211, 211, 211, 85);
     ellipse(935, 340, 195, 230);
+    noStroke();
+    ellipse(935, 340, 60, 60);
+    stroke(0);
+    strokeWeight(1);
+    ellipse(935, 340, 180, 215);
+    fill(100, 100, 100);
+    ellipse(935, 340, 50, 50);
+    fill(220, 220, 220);
+    ellipse(935, 340, 10, 10);
 
     //Piano keys
 
@@ -367,8 +384,6 @@ function playSynth4() {
       autoSynth.play(wheels[counter], velocity, time, dur);
       counter ++;
     }
-    fill(255);
-    rect(50,50,50,50);
   }
   counter = 0;
 }
